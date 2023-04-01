@@ -43,9 +43,10 @@ function notas() {
     const promedio = (parseFloat(nota1.value) + parseFloat(nota2.value) + parseFloat(nota3.value))/3
 
     if (promedio >= 3.0) {
-        resultado.innerHTML = "Felicitaciones " + nombreEstudiante.value + ", su nota es " + promedio.toFixed(2) + ", pasaste la materia " + materia.value + "." 
+        // resultado.innerHTML = "Felicitaciones " + nombreEstudiante.value + ", su nota es " + promedio.toFixed(2) + ", pasaste la materia " + materia.value + "."
+        resultado.innerHTML = "Felicitaciones " + nombreEstudiante.value + ", " + "<span style='color:#00ff00'>" + "su nota es " + promedio.toFixed(2) + "</span>" + ". Pasaste la materia " + materia.value + "." 
     } else {
-        resultado.innerHTML = "Lo siento " + nombreEstudiante.value + ", su nota es " + promedio.toFixed(2) + ", No pasaste la materia " + materia.value + "." 
+        resultado.innerHTML = "Lo siento " + nombreEstudiante.value + ", " + "<span style='color:#ff0000'>" + "su nota es " + promedio.toFixed(2) + "</span>" + ". No pasaste la materia " + materia.value + "." 
     }
 
 }
