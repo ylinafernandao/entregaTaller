@@ -8,7 +8,7 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-        <link href="css/primer.css" rel="stylesheet">
+        <link href="../CSS/primer.css" rel="stylesheet">
     </head>
     <body>
     
@@ -16,21 +16,21 @@
             <nav class="navegacion">
                 <ul class="menu">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="HTML/primer.html">Punto 1</a></li>
-                    <li><a href="HTML/segundo.html">Punto 2</a></li>
-                    <li><a href="HTML/tercer.html">Punto 3</a></li>
-                    <li><a href="HTML/cuarto.html">Punto 4</a></li>
-                    <li><a href="HTML/quinto.html">Punto 5</a></li>
+                    <li><a href="#puntoUno">Punto 1</a></li>
+                    <li><a href="#puntoDos">Punto 2</a></li>
+                    <li><a href="#puntoTres">Punto 3</a></li>
+                    <li><a href="#puntoCuatro">Punto 4</a></li>
+                    <li><a href="#puntoCinco">Punto 5</a></li>
                     <li><a href="#puntoSeis">Punto 6</a></li>
-                    <li><a href="HTML/septimo.html">Punto 7</a></li>
-                    <li><a href="HTML/octavo.html">Punto 8</a></li>
+                    <li><a href="#puntoSiete">Punto 7</a></li>
+                    <li><a href="#puntoOcho">Punto 8</a></li>
                 </ul>
             </nav>
         </header>
 
         <main class="contenido">
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoUno">
                 <h4>Punto 1</h4> 
                 <p>Realizar una aplicación web que permita contar la cantidad de caracteres de un texto ingresado por el usuario.</p>
                 
@@ -40,17 +40,17 @@
                 <p id="txtSalida"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoDos">
                 <h4>Punto 2</h4> 
                 <p>Realizar una aplicación web que permita identificar si el valor ingresado por el usuario es un tipo de dato texto o número.</p>
 
                 <label for="inputValor">Ingrese el valor:</label><br>
                 <input type="text" id="inputValor">
-                <button id="btnTipo" onclick="getTipo()">Tipo</button>
+                <button id="btnTipo" onclick="getTipo()">Consultar</button>
                 <p id="textSalida"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoTres">
                 <h4>Punto 3</h4> 
                 <p>Realizar una aplicación web que permita identificar si una persona es mayor de edad. Debe pedir el nombre y la edad.</p>
                 
@@ -62,7 +62,7 @@
                 <p id="txtoSalida"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoCuatro">
                 <h4>Punto 4</h4> 
                 <p>Realizar una aplicación web que permita saber si un usuario pasa o pierde una materia. La aplicación debe pedirle al usuario que ingrese el nombre de la persona, el nombre de la materia, y debe pedirle 3 notas. El algoritmo debe calcular el promedio de las 3 notas y determinar con ese promedio si pasa o no la materia. Si el promedio es menor a 3.0, debe indicar que perdió la materia, pero si es igual o superior a 3.0 debe indicar que pasó la materia. Debe usar colores como el rojo o el verde para indicar que si se pasa o se pierde la materia.</p>
             
@@ -80,13 +80,13 @@
                 <p id="salidaPromedio"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoCinco">
                 <h4>Punto 5</h4> 
                 <p>Realizar una aplicación para identificar números pares e impares. El número debe ser ingresado por el usuario y debe ser un número entero positivo.</p>
                 
                 <label for="inputNumero">Ingrese el número:</label><br>
                 <input type="number" id="inputNumero"><br>
-                <button id="btnPares" onclick="parImpar()">Pares</button>
+                <button id="btnPares" onclick="parImpar()">Consultar</button>
                 <p id="textoSalida"></p>
             </section>
 
@@ -95,11 +95,15 @@
                 <p>Realizar una aplicación que permite buscar contenido en un texto. El usuario debe ingresar un texto (oración, párrafos, etc.) y debe ingresar el texto a buscar, El sistema debe mostrar o resaltar las coincidencias encontradas en el texto.</p> 
                 
                 <label for="inputTexto">Ingrese un texo:</label><br>
-                <input type="text" id="inputTexto"><br>
+                <!-- <input id="inputTexto"> -->
+                <textarea id="inputTexto"></textarea><br>
+                <label for="inputBuscar">Ingrese el contenido a buscar:</label><br>
+                <input type="text" id="inputBuscar"><br>
                 <button id="btnTexto" onclick="buscarContenido()">Buscar</button>
+                <p id="mostrarContenido"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoSiete">
                 <h4>Punto 7</h4> 
                 <p>Realizar una aplicación que permita saber si un número es divisible por otro. El usuario debe ingresar dos números enteros positivos a y b, y decir si son divisibles entre sí.</p>
            
@@ -107,16 +111,16 @@
                 <input type="number" id="inputNumero1"><br>
                 <label for="inputNumero2">Ingrese el segundo número:</label><br>
                 <input type="number" id="inputNumero2"><br>
-                <button id="btnDivisible" onclick="divisible()">Divisible</button>
+                <button id="btnDivisible" onclick="divisible()">Consultar</button>
                 <p id="divisibleSalida"></p>
             </section>
 
-            <section class="contenedor_punto1">
+            <section class="contenedor_punto1" id="puntoOcho">
                 <h4>Punto 8</h4> 
                 <p>Realizar una aplicación que permita identificar una lista de números enteros, ingresados por el usuario y separados por coma, cuales son números pares e impares.</p> 
 
                 Numeros: <input type="text" id="inputNumeros"><br>
-                <button id="btnLista" onclick="listaNumeros()">Lista</button>
+                <button id="btnLista" onclick="listaNumeros()">Consultar</button>
                 <p id="ochoSalida"></p>
                 <ul id="listaPuntoOcho"></ul>
                 </section>
@@ -126,7 +130,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="js/primer.js"></script>
     </body>
 
     <script>
@@ -204,6 +207,16 @@
             } else {
                 salida.innerHTML = "Impar."
             }
+        }
+
+        function buscarContenido() {
+            let texto = document.getElementById("inputTexto").value
+            let contenidoBuscar = document.getElementById("inputBuscar").value
+            let mostrar = document.getElementById("mostrarContenido")
+
+            texto = texto.replaceAll(contenidoBuscar, '<span style="color:#ff0000">'+contenidoBuscar+'</span>')
+            mostrar.innerHTML = texto
+
         }
 
         function divisible() {
