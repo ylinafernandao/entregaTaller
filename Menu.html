@@ -12,7 +12,7 @@
     </head>
     <body>
     
-        <header>
+        <header class="top">
             <nav class="navegacion">
                 <ul class="menu">
                     <li><a href="#">Inicio</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="HTML/tercer.html">Punto 3</a></li>
                     <li><a href="HTML/cuarto.html">Punto 4</a></li>
                     <li><a href="HTML/quinto.html">Punto 5</a></li>
-                    <li><a href="HTML/sexto.html">Punto 6</a></li>
+                    <li><a href="#puntoSeis">Punto 6</a></li>
                     <li><a href="HTML/septimo.html">Punto 7</a></li>
                     <li><a href="HTML/octavo.html">Punto 8</a></li>
                 </ul>
@@ -29,8 +29,98 @@
         </header>
 
         <main class="contenido">
-            <h2>Punto 1</h2> 
-            <p>Realizar una aplicación web que permita contar la cantidad de caracteres de un texto ingresado por el usuario.</p>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 1</h4> 
+                <p>Realizar una aplicación web que permita contar la cantidad de caracteres de un texto ingresado por el usuario.</p>
+                
+                <label for="inputUsuario">Ingrese palabra:</label><br>
+                <input type="text" id="inputUsuario">
+                <button id="btnContar" onclick="contarCaracteres()">Contar</button>
+                <p id="txtSalida"></p>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 2</h4> 
+                <p>Realizar una aplicación web que permita identificar si el valor ingresado por el usuario es un tipo de dato texto o número.</p>
+
+                <label for="inputValor">Ingrese el valor:</label><br>
+                <input type="text" id="inputValor">
+                <button id="btnTipo" onclick="getTipo()">Tipo</button>
+                <p id="textSalida"></p>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 3</h4> 
+                <p>Realizar una aplicación web que permita identificar si una persona es mayor de edad. Debe pedir el nombre y la edad.</p>
+                
+                <label for="inputNombre">Ingrese el nombre:</label><br>
+                <input type="text" id="inputNombre"><br>
+                <label for="inputEdad">Ingrese la edad:</label><br>
+                <input type="number" id="inputEdad"><br>
+                <button id="btnEdad" onclick="mayorEdad()">Consultar edad</button>
+                <p id="txtoSalida"></p>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 4</h4> 
+                <p>Realizar una aplicación web que permita saber si un usuario pasa o pierde una materia. La aplicación debe pedirle al usuario que ingrese el nombre de la persona, el nombre de la materia, y debe pedirle 3 notas. El algoritmo debe calcular el promedio de las 3 notas y determinar con ese promedio si pasa o no la materia. Si el promedio es menor a 3.0, debe indicar que perdió la materia, pero si es igual o superior a 3.0 debe indicar que pasó la materia. Debe usar colores como el rojo o el verde para indicar que si se pasa o se pierde la materia.</p>
+            
+                <label for="inputEstudiante">Ingrese el nombre:</label><br>
+                <input type="text" id="inputEstudiante"><br>
+                <label for="inputMateria">Ingrese el nombre de la asignatura:</label><br>
+                <input type="text" id="inputMateria"><br>
+                <label for="inputNota1">Ingrese la primer nota:</label><br>
+                <input type="number" class="notas" id="inputNota1"><br>
+                <label for="inputNota2">Ingrese la segunda nota:</label><br>
+                <input type="number" class="notas" id="inputNota2"><br>
+                <label for="inputNota3">Ingrese la tercer nota:</label><br>
+                <input type="number" class="notas" id="inputNota3"><br>
+                <button id="btnPromedio" onclick="notas()">Calcular promedio</button>
+                <p id="salidaPromedio"></p>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 5</h4> 
+                <p>Realizar una aplicación para identificar números pares e impares. El número debe ser ingresado por el usuario y debe ser un número entero positivo.</p>
+                
+                <label for="inputNumero">Ingrese el número:</label><br>
+                <input type="number" id="inputNumero"><br>
+                <button id="btnPares" onclick="parImpar()">Pares</button>
+                <p id="textoSalida"></p>
+            </section>
+
+            <section class="contenedor_punto1" id="puntoSeis">
+                <h4>Punto 6</h4> 
+                <p>Realizar una aplicación que permite buscar contenido en un texto. El usuario debe ingresar un texto (oración, párrafos, etc.) y debe ingresar el texto a buscar, El sistema debe mostrar o resaltar las coincidencias encontradas en el texto.</p> 
+                
+                <label for="inputTexto">Ingrese un texo:</label><br>
+                <input type="text" id="inputTexto"><br>
+                <button id="btnTexto" onclick="buscarContenido()">Buscar</button>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 7</h4> 
+                <p>Realizar una aplicación que permita saber si un número es divisible por otro. El usuario debe ingresar dos números enteros positivos a y b, y decir si son divisibles entre sí.</p>
+           
+                <label for="inputNumero1">Ingrese el primer número:</label><br>
+                <input type="number" id="inputNumero1"><br>
+                <label for="inputNumero2">Ingrese el segundo número:</label><br>
+                <input type="number" id="inputNumero2"><br>
+                <button id="btnDivisible" onclick="divisible()">Divisible</button>
+                <p id="divisibleSalida"></p>
+            </section>
+
+            <section class="contenedor_punto1">
+                <h4>Punto 8</h4> 
+                <p>Realizar una aplicación que permita identificar una lista de números enteros, ingresados por el usuario y separados por coma, cuales son números pares e impares.</p> 
+
+                Numeros: <input type="text" id="inputNumeros"><br>
+                <button id="btnLista" onclick="listaNumeros()">Lista</button>
+                <p id="ochoSalida"></p>
+                <ul id="listaPuntoOcho"></ul>
+                </section>
+        
         </main>
 
 
@@ -38,4 +128,149 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="js/primer.js"></script>
     </body>
+
+    <script>
+        function contarCaracteres() {
+            const input = document.getElementById("inputUsuario")
+            const salida = document.getElementById("txtSalida")
+            const texto = input.value
+            salida.innerHTML = "El número de caracteres es: " + texto.length
+        }
+
+        function getTipo() {
+            const input = document.getElementById("inputValor")
+            const salida = document.getElementById("textSalida")
+        
+            let tipo
+            if (isNaN(input.value)) {
+                tipo = typeof(input.value)
+            } else {
+                tipo = 'number'
+            }
+            salida.innerHTML = "El tipo es: " + tipo
+        }
+
+        function mayorEdad() {
+            const inputNombre = document.getElementById("inputNombre")
+            const inputEdad = document.getElementById("inputEdad")
+            const salida = document.getElementById("txtoSalida")
+
+            if (inputEdad.value >= 18) {
+                salida.innerHTML = "Hola " + inputNombre.value + ", eres mayor de edad"
+            } else if (inputEdad.value < 18 && inputEdad.value > 0) {
+                salida.innerHTML = "Hola " + inputNombre.value + ", no eres mayor de edad"
+            } else {
+                salida.innerHTML = "No es una edad válida"
+            }
+        }
+
+        function notas() {
+            const nombreEstudiante = document.getElementById("inputEstudiante")
+            const materia = document.getElementById("inputMateria")
+            const nota1 = document.getElementById("inputNota1")
+            const nota2 = document.getElementById("inputNota2")
+            const nota3 = document.getElementById("inputNota3")
+            const resultado = document.getElementById("salidaPromedio")
+        
+            const promedio = (parseFloat(nota1.value) + parseFloat(nota2.value) + parseFloat(nota3.value))/3
+
+            if (promedio >= 3.0) {
+                resultado.innerHTML = "Felicitaciones " + nombreEstudiante.value + ", su nota es " + promedio.toFixed(2) + ", pasaste la materia " + materia.value + "." 
+            } else {
+                resultado.innerHTML = "Lo siento " + nombreEstudiante.value + ", su nota es " + promedio.toFixed(2) + ", No pasaste la materia " + materia.value + "." 
+            }
+
+        }
+
+        function parImpar() {
+            const input = document.getElementById("inputNumero")
+            const salida = document.getElementById("textoSalida")
+
+            if ((input.value - Math.floor(input.value)) !== 0) {
+                if (input.value < 0) {
+                    salida.innerHTML = "Debe ingresar números enteros positivos."
+                    return
+                } else {
+                    salida.innerHTML = "Debe ingresar números enteros."
+                    return
+                }
+            } else if (input.value < 0) {
+                salida.innerHTML = "Debe ingresar números positivos."
+                return
+            }
+        
+            if (input.value % 2 === 0) {
+                salida.innerHTML = "Par."
+            } else {
+                salida.innerHTML = "Impar."
+            }
+        }
+
+        function divisible() {
+            const numero_1 = document.getElementById("inputNumero1")
+            const numero_2 = document.getElementById("inputNumero2")
+            const salida = document.getElementById("divisibleSalida")
+
+            let noEnteroNumero_1 = false, noEnteroNumero_2 = false, negativoNumero_1 = false, negativoNumero_2 = false
+            if ((numero_1.value - Math.floor(numero_1.value)) !== 0) noEnteroNumero_1 = true;
+            if ((numero_2.value - Math.floor(numero_2.value)) !== 0) noEnteroNumero_2 = true;
+            if (numero_1.value < 0) negativoNumero_1 = true;
+            if (numero_2.value < 0) negativoNumero_2 = true;
+
+            if (noEnteroNumero_1 && noEnteroNumero_2) {
+                if (negativoNumero_1 && negativoNumero_2) {
+                 salida.innerHTML = `Los números ${numero_1.value} y ${numero_2.value} no son enteros positivos`
+                 return
+                } else if (negativoNumero_1) {
+                    salida.innerHTML = "El número " + numero_1.value + " no es un entero positivo"
+                    return
+                } else if (negativoNumero_2) {
+                    salida.innerHTML = "El número " + numero_2.value + " no es un entero positivo"
+                    return
+                } else {
+                    salida.innerHTML = "Los números " + numero_1.value + " y " + numero_2.value + " no son enteros"
+                    return
+                }
+            } else if (noEnteroNumero_1) {
+                salida.innerHTML = "El número " + numero_1.value + " no es entero"
+                return
+            } else if (noEnteroNumero_2) {
+                salida.innerHTML = "El número " + numero_2.value + " no es entero"
+                return
+            } else if (negativoNumero_1) {
+                salida.innerHTML = "El número " + numero_1.value + " no es positivo"
+                return
+            } else if (negativoNumero_2) {
+                salida.innerHTML = "El número " + numero_2.value + " no es positivo"
+                return
+            }
+
+            if (numero_1.value % numero_2.value === 0) {
+                salida.innerHTML = "El número " + numero_1.value + " es divisible entre el número " + numero_2.value
+            } else {
+                salida.innerHTML = "El número " + numero_1.value + " no es divisible entre el número " + numero_2.value
+            }
+        }
+
+        function listaNumeros() {
+            const numeros = document.getElementById("inputNumeros")
+            const salida = document.getElementById("txtSalida")
+            const lista = document.getElementById("listaPuntoOcho")
+
+            const listaNumeros = numeros.value.split(',')
+            listaNumeros.forEach(numero => {
+                const li = document.createElement("li")
+                if ((numero - Math.floor(numero)) !== 0 || isNaN(numero)) {
+                    li.innerHTML = `${numero} no es un número entero`
+                } else {
+                    if (numero % 2 == 0) {
+                        li.innerHTML = `${numero} es número par`
+                    } else {
+                        li.innerHTML = `${numero} es número impar`
+                    }
+                }
+                lista.appendChild(li)
+            })
+        }
+    </script>
 </html>
