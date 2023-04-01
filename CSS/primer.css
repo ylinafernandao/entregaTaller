@@ -23,3 +23,8 @@ body{
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.navegacion .menu li a:hover{
+    color:lightblue;
+    transition: all .3s;
+}
