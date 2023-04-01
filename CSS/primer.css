@@ -6,8 +6,9 @@ body{
     top: 0px;
 }
 .navegacion{
+    top:none;
     width: 1000px;
-    margin: 30px auto;
+    margin: 0px auto;
     background-color: darkslategrey;
 }
 
@@ -17,7 +18,7 @@ body{
 
 .navegacion .menu li{
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .navegacion .menu li a{
