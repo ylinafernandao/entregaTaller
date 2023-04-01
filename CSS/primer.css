@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background-color: darkslategrey;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.navegacion .menu li{
+    display: inline-block
+}
+
+.navegacion .menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
