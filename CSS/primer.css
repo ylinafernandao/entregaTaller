@@ -13,6 +13,7 @@ body{
 }
 
 .navegacion .menu li{
+    position: relative;
     display: inline-block
 }
 
@@ -27,4 +28,17 @@ body{
 .navegacion .menu li a:hover{
     color:lightblue;
     transition: all .3s;
+}
+
+.contenido{
+    width: 1000px;
+    margin:auto;
+}
+
+.contenido h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenido p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
